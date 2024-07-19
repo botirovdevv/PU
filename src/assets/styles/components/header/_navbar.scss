@@ -1,0 +1,41 @@
+.nav {
+    padding: 20px 0;
+
+    &-content {
+        @include flex(center, space-between)
+    }
+
+    &-logo_title {
+        font-family: $font-family;
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: 0.78px;
+    }
+
+    &-links {
+        @include flex(center, unset);
+        gap: 24px;
+    }
+
+    &-link {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 18px;
+        color: #787282;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: #1a093e;
+        }
+    }
+
+    &-all_link {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 18px;
+        color: #3f41a6;
+        border: 2px solid $blue;
+        padding: 10px 34px;
+        border-radius: 6px;
+    }
+}

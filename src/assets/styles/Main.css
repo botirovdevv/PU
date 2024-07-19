@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: inherit;
+}
+
+.container {
+  max-width: 1460px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  background-color: #fff;
+}
+
+.wrapper {
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(38, 63, 96);
+  border-radius: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body.scroll {
+  overflow-y: hidden;
+}
+
+.nav {
+  padding: 20px 0;
+}
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo_title {
+  font-family: "Public Sans", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 24px;
+}
+.nav-link {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #787282;
+  transition: all 0.2s ease-in-out;
+}
+.nav-link:hover {
+  color: #1a093e;
+}
+.nav-all_link {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #3f41a6;
+  border: 2px solid #3f41a6;
+  padding: 10px 34px;
+  border-radius: 6px;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-bg {
+  width: 100%;
+}
+.search-img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(30%);
+}
+.search-items {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  width: 100%;
+}
+.search-form {
+  width: 50%;
+}
+.search-title {
+  font-family: "Public Sans", sans-serif;
+  font-size: 23px;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 14px;
+  font-weight: 500;
+}/*# sourceMappingURL=Main.css.map */
