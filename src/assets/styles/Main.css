@@ -113,6 +113,11 @@ body.scroll {
   border: 2px solid #3f41a6;
   padding: 10px 34px;
   border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+.nav-all_link:hover {
+  background-color: #3f41a6;
+  color: #fff;
 }
 
 .search {
