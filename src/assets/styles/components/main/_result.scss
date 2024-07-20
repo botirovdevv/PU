@@ -1,0 +1,29 @@
+.result {
+    &-img {
+        height: auto;
+        vertical-align: middle;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    &-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-item{
+        padding: 20px;
+    }
+
+    &-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}

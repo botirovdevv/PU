@@ -89,7 +89,7 @@ const Header = () => {
                             </Select>
                         </FormControl>
                         <TextField
-                            label="Search for images..."
+                            label="Search"
                             value={query}
                             id="filled-password-input"
                             autoComplete="current-password"

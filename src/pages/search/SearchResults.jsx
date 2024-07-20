@@ -7,6 +7,7 @@ const SearchResults = () => {
     const location = useLocation();
     const query = new URLSearchParams(location.search).get('query');
     const searchType = new URLSearchParams(location.search).get('type');
+    const [error, setError] = useState('Search Results')
 
     useEffect(() => {
         const fetchResults = async () => {
@@ -14,10 +15,10 @@ const SearchResults = () => {
                 const endpoint = searchType === 'video' ? 'videos/search' : 'search';
                 try {
                     const response = await axios.get(
-                        `https://api.pexels.com/v1/${endpoint}?query=${query}&per_page=10`,
+                        `https://api.pexels.com/v1/${endpoint}?query=${query}&per_page=100`,
                         {
                             headers: {
-                                Authorization: 'Pa7P3iRvwAQlKjpRcHW5nHjA1slwGMedmeWlIcyynbCla0DpTIQafRl7' 
+                                Authorization: 'Pa7P3iRvwAQlKjpRcHW5nHjA1slwGMedmeWlIcyynbCla0DpTIQafRl7'
                             }
                         }
                     );
@@ -25,7 +26,7 @@ const SearchResults = () => {
                     searchType === 'video' ? setResults(response.data.videos) : setResults(response.data.photos);
 
                 } catch (error) {
-                    console.error('Error fetching results:', error);
+                    setError("Ma'lumotlar topilmadi")
                 }
             }
         };
@@ -34,23 +35,28 @@ const SearchResults = () => {
     }, [query, searchType]);
 
     return (
-        <div>
-            <h1>Search Results</h1>
-            <div className="grid-container">
-                {results.map((result) => (
-                    <div key={result.id} className="grid-item">
-                        {searchType === 'video' ? (
-                            <video controls width={300}>
-                                <source src={result.video_files[0].link} type="video/mp4" />
-                            </video>
-                        ) : (
-                            <img src={result.src.large} alt={result.photographer} />
-                        )}
-                        <p>Photographer: {result.photographer}</p>
-                    </div>
-                ))}
+        <section className='result'>
+            <div className="container">
+                <h1>{error}</h1>
+                <div className="result-content">
+                    {results.map((result) => (
+                        <div key={result.id} className="result-item">
+                            {searchType === 'video' ? (
+                                <video controls width={300}>
+                                    <source src={result.video_files[0].link} type="video/mp4" />
+                                </video>
+                            ) : (
+                                <div className="result-image">
+                                    <img src={result.src.large} className='result-img' alt={result.photographer} />
+                                </div>
+                            )}
+                            {/* <p>Photographer: {result.photographer}</p> */}
+                        </div>
+                    ))}
+                </div>
+
             </div>
-        </div>
+        </section>
     );
 };
 

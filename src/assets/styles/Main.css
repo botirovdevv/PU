@@ -95,6 +95,11 @@ body.scroll {
   justify-content: unset;
   gap: 24px;
 }
+@media screen and (max-width: 472px) {
+  .nav-links {
+    display: none;
+  }
+}
 .nav-link {
   font-family: "Public Sans", sans-serif;
   font-weight: 600;
@@ -118,6 +123,11 @@ body.scroll {
 .nav-all_link:hover {
   background-color: #3f41a6;
   color: #fff;
+}
+@media screen and (max-width: 665px) {
+  .nav-all_link {
+    display: none;
+  }
 }
 
 .search {
@@ -149,6 +159,12 @@ body.scroll {
 .search-form {
   width: 50%;
 }
+@media screen and (max-width: 1050px) {
+  .search-form {
+    width: 100%;
+    padding: 0 50px;
+  }
+}
 .search-title {
   font-family: "Public Sans", sans-serif;
   font-size: 23px;
@@ -156,4 +172,44 @@ body.scroll {
   color: #fff;
   padding-bottom: 14px;
   font-weight: 500;
+}
+
+.result-img {
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.result-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.result-item {
+  padding: 20px;
+}
+.result-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.videos-title {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  padding: 30px 0;
+}
+.videos-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }/*# sourceMappingURL=Main.css.map */

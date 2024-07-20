@@ -1,5 +1,6 @@
 import Home from "../pages/Home";
 import SearchResults from "../pages/search/SearchResults";
+import Videos from "../pages/videos/Videos";
 
 export const routes = [
     {
@@ -10,5 +11,10 @@ export const routes = [
     {
         path: "/search-results",
         element: <SearchResults/>
+    },
+
+    {
+        path: "/videos",
+        element: <Videos/>
     }
 ]

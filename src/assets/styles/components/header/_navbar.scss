@@ -15,6 +15,10 @@
     &-links {
         @include flex(center, unset);
         gap: 24px;
+
+        @media screen and (max-width: 472px){
+            display: none;
+        }
     }
 
     &-link {
@@ -42,6 +46,10 @@
         &:hover{
             background-color: #3f41a6;
             color: #fff;
+        }
+
+        @media screen and (max-width: 665px){
+            display: none;
         }
     }
 }

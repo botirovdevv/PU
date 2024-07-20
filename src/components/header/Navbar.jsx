@@ -8,9 +8,9 @@ const Navbar = () => {
         <div className="container">
             <div className="nav-content">
                 <div className="nav-logo">
-                    <h1 className="nav-logo_title">
+                    <Link to="/" className="nav-logo_title">
                         PU
-                    </h1>
+                    </Link>
                 </div>
                 <ul className="nav-links">
                     {
