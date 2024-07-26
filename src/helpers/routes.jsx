@@ -1,4 +1,5 @@
 import Home from "../pages/Home";
+import MorePhotos from "../pages/images/MorePhotos";
 import Photos from "../pages/images/Photos";
 import SearchResults from "../pages/search/SearchResults";
 import Videos from "../pages/videos/Videos";
@@ -22,5 +23,10 @@ export const routes = [
     {
         path: "/photos",
         element: <Photos/>
+    },
+
+    {
+        path: "/more",
+        element: <MorePhotos/>
     }
 ]

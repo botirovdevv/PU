@@ -225,4 +225,6 @@ body.scroll {
   width: 250px;
   height: 250px;
   border-radius: 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=Main.css.map */

@@ -19,8 +19,8 @@ const Navbar = () => {
                         ))
                     }
                 </ul>
-                <Link className="nav-all_link">
-                    All Photos
+                <Link to="/more" className="nav-all_link">
+                    More Photos
                 </Link>
             </div>
         </div>
