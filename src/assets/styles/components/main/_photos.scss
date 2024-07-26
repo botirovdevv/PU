@@ -1,0 +1,13 @@
+.photos{
+
+    &-images{
+        @include flex(center, center);
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &-image{
+        width: 250px;
+        height: 250px;
+        border-radius: 6px;
+    }
+}

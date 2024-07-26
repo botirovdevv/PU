@@ -7,7 +7,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import InputLabel from '@mui/material/InputLabel';
+// import InputLabel from '@mui/material/InputLabel';
 import bg from '../../assets/images/bg.jpg';
 import { useNavigate } from 'react-router-dom';
 
@@ -45,6 +45,7 @@ const Header = () => {
         e.preventDefault();
         setSearchQuery(query);
         navigate(`/search-results?query=${query}&type=${searchType}`);
+        // query === '' ? setError('error') : query
     };
 
     return (

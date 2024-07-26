@@ -212,4 +212,17 @@ body.scroll {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.photos-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.photos-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 6px;
 }/*# sourceMappingURL=Main.css.map */
